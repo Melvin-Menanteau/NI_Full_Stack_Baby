@@ -1,7 +1,7 @@
 <?php
 
 
-$servername = getenv("SBDD_HOSTNAME");
+$servername = "sql105.infinityfree.com";
 $username = getenv("SBDD_USERNAME");
 $password = getenv("SBDD_PASSWORD");
 
