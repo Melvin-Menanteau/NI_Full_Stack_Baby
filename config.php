@@ -1,9 +1,9 @@
 <?php
 
 
-$servername = "SBDD_HOSTNAME";
-$username = "SBDD_USERNAME";
-$password = "SBDD_PASSWORD";
+$servername = "BDD_HOSTNAME";
+$username = "BDD_USERNAME";
+$password = "BDD_PASSWORD";
 
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=if0_35531073_test", $username, $password);
