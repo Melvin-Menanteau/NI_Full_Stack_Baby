@@ -10,10 +10,9 @@ jobs:
     steps:
       -  name: Checkout Repository
          uses: actions/checkout@v2
-
     
       -  name: FTP Transfer
-         uses: appleboy/ftp-action@master
+         uses: sebastianpopp/ftp-action@releases/v2
          with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
