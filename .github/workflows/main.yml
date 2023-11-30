@@ -15,7 +15,7 @@ jobs:
          uses: sebastianpopp/ftp-action@releases/v2
          with:
           host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local: "." # Chemin local des fichiers à transférer (par défaut, le répertoire racine du référentiel)
-          remote: "/htdocs" # Chemin sur le serveur FTP où les fichiers seront transférés
+          localDir: "." # Chemin local des fichiers à transférer (par défaut, le répertoire racine du référentiel)
+          remoteDir: "/htdocs" # Chemin sur le serveur FTP où les fichiers seront transférés
