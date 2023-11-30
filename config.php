@@ -1,5 +1,6 @@
 <?php
 
+
 $servername = getenv("SBDD_HOSTNAME");
 $username = getenv("SBDD_USERNAME");
 $password = getenv("SBDD_PASSWORD");
