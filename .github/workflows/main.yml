@@ -14,8 +14,8 @@ jobs:
       - name: Replace Secrets in Config
         run: |
           sed -i "s/BDD_PASSWORD/${{ secrets.BDD_PASSWORD }}/g" config.php
-          sed -i "s/BDD_PASSWORD/${{ secrets.BDD_HOSTNAME }}/g" config.php
-          sed -i "s/BDD_PASSWORD/${{ secrets.BDD_USERNAME }}/g" config.php
+          sed -i "s/BDD_HOSTNAME/${{ secrets.BDD_HOSTNAME }}/g" config.php
+          sed -i "s/BDD_USERNAME/${{ secrets.BDD_USERNAME }}/g" config.php
           
       -  name: FTP Transfer
          uses: sebastianpopp/ftp-action@releases/v2
