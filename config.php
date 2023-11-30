@@ -1,9 +1,9 @@
 <?php
 
 
-$servername = "getenv(SBDD_HOSTNAME)";
-$username = getenv("SBDD_USERNAME");
-$password = getenv("SBDD_PASSWORD");
+$servername = "SBDD_HOSTNAME";
+$username = "SBDD_USERNAME";
+$password = "SBDD_PASSWORD";
 
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=if0_35531073_test", $username, $password);
