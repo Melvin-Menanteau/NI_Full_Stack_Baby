@@ -11,12 +11,11 @@ jobs:
       -  name: Checkout Repository
          uses: actions/checkout@v2
 
-      - name: Execute script
-        env:
-          BDD_PASSWORD: ${{ secrets.BDD_PASSWORD }}
-          BDD_HOSTNAME: ${{ secrets.BDD_HOSTNAME }}
-          BDD_USERNAME: ${{ secrets.BDD_USERNAME }}
-        run: php config.php
+      - name: Replace Secrets in Config
+        run: |
+          sed -i "s/BDD_PASSWORD/${{ secrets.BDD_PASSWORD }}/g" config.php
+          sed -i "s/BDD_PASSWORD/${{ secrets.BDD_HOSTNAME }}/g" config.php
+          sed -i "s/BDD_PASSWORD/${{ secrets.BDD_USERNAME }}/g" config.php
           
       -  name: FTP Transfer
          uses: sebastianpopp/ftp-action@releases/v2
