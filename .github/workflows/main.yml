@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local: "." # Chemin local des fichiers à transférer (par défaut, le répertoire racine du référentiel)
-          remote: "/chemin/du/serveur" # Chemin sur le serveur FTP où les fichiers seront transférés
+          remote: "/htdocs" # Chemin sur le serveur FTP où les fichiers seront transférés
