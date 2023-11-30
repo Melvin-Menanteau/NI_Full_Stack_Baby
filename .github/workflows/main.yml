@@ -16,7 +16,7 @@ jobs:
           SBDD_PASSWORD: ${{ secrets.BDD_PASSWORD }}
           SBDD_HOSTNAME: ${{ secrets.BDD_HOSTNAME }}
           SBDD_USERNAME: ${{ secrets.BDD_USERNAME }}
-          run: php config.php
+        run: php config.php
           
       -  name: FTP Transfer
          uses: sebastianpopp/ftp-action@releases/v2
